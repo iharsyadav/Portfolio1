@@ -6,15 +6,331 @@
 
 @theme {
 
-  /* COLORS */
+  /* =========================
+     COLORS
+  ========================= */
 
-  --color-primary: #fbbf24;
+  --color-background: #f7eef6;
+  --color-foreground: #24182c;
 
-  --color-dark: #09090b;
+  --color-primary: #f7a8d5;
+  --color-secondary: #cdb4ff;
 
-  --color-card: #18181b;
+  --color-pink: #ffc8dd;
+  --color-lavender: #d0bfff;
+  --color-blue: #a0e7ff;
+  --color-mint: #b8f2d6;
+  --color-yellow: #ffeaa7;
+  --color-peach: #ffc6a5;
 
-  --color-muted: #a1a1aa;
+  --color-card: rgba(255,255,255,0.45);
+  --color-border: rgba(255,255,255,0.35);
 
-  /* FONTS */
+  /* =========================
+     RADIUS
+  ========================= */
+
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 36px;
+  --radius-2xl: 48px;
+
+  /* =========================
+     SHADOWS
+  ========================= */
+
+  --shadow-soft:
+    0 10px 30px rgba(180,140,180,0.18),
+    inset 0 1px 1px rgba(255,255,255,0.45);
+
+  --shadow-card:
+    0 18px 40px rgba(180,140,180,0.25),
+    inset 0 1px 1px rgba(255,255,255,0.35);
+
+  /* =========================
+     FONTS
+  ========================= */
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* =========================
+     ANIMATIONS
+  ========================= */
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-blob: blob 14s ease-in-out infinite;
+  --animate-fade-up: fadeUp .8s ease forwards;
+  --animate-shimmer: shimmer 3s linear infinite;
+
+  /* =========================
+     KEYFRAMES
+  ========================= */
+
+  @keyframes float {
+    0%,100%{
+      transform: translateY(0px);
+    }
+
+    50%{
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes blob {
+    0%,100%{
+      border-radius: 42% 58% 60% 40%;
+      transform: scale(1);
+    }
+
+    50%{
+      border-radius: 58% 42% 40% 60%;
+      transform: scale(1.08);
+    }
+  }
+
+  @keyframes fadeUp {
+    from{
+      opacity:0;
+      transform: translateY(40px);
+    }
+
+    to{
+      opacity:1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes shimmer {
+    to{
+      background-position: 200% center;
+    }
+  }
+}
+
+/* =========================
+   BASE
+========================= */
+
+body{
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4{
+  font-family: var(--font-display);
+}
+
+/* =========================
+   UTILITIES
+========================= */
+
+@layer utilities {
+
+  /* =========================
+     GLASS
+  ========================= */
+
+  .glass{
+    background: rgba(255,255,255,0.35);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* =========================
+     CARD
+  ========================= */
+
+  .card-ui{
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-card);
+
+    background: rgba(255,255,255,0.45);
+
+    backdrop-filter: blur(18px);
+  }
+
+  /* =========================
+     CLAY CARD
+  ========================= */
+
+  .clay-sm{
+    position: relative;
+
+    border-radius: 32px;
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+      0 12px 35px rgba(190,150,200,0.22),
+      inset 0 1px 1px rgba(255,255,255,0.4);
+
+    transition: all .35s ease;
+  }
+
+  .clay-sm:hover{
+    transform: translateY(-4px);
+  }
+
+  /* =========================
+     PRESSED
+  ========================= */
+
+  .clay-pressed{
+    background: rgba(255,255,255,0.35);
+
+    border-radius: 18px;
+
+    box-shadow:
+      inset 3px 3px 8px rgba(180,140,180,0.15),
+      inset -3px -3px 8px rgba(255,255,255,0.8);
+
+    backdrop-filter: blur(12px);
+  }
+
+  /* =========================
+     PINK
+  ========================= */
+
+  .clay-pink{
+    background:
+      linear-gradient(
+        135deg,
+        rgba(255,200,221,0.96),
+        rgba(247,168,213,0.92)
+      );
+
+    box-shadow:
+      0 10px 25px rgba(247,168,213,0.35);
+  }
+
+  /* =========================
+     LAVENDER
+  ========================= */
+
+  .clay-lavender{
+    background:
+      linear-gradient(
+        135deg,
+        rgba(208,191,255,0.96),
+        rgba(205,180,255,0.92)
+      );
+
+    box-shadow:
+      0 10px 25px rgba(205,180,255,0.35);
+  }
+
+  /* =========================
+     SKY
+  ========================= */
+
+  .clay-sky{
+    background:
+      linear-gradient(
+        135deg,
+        rgba(160,231,255,0.96),
+        rgba(137,216,255,0.92)
+      );
+
+    box-shadow:
+      0 10px 25px rgba(137,216,255,0.35);
+  }
+
+  /* =========================
+     MINT
+  ========================= */
+
+  .clay-mint{
+    background:
+      linear-gradient(
+        135deg,
+        rgba(184,242,214,0.96),
+        rgba(155,231,196,0.92)
+      );
+
+    box-shadow:
+      0 10px 25px rgba(155,231,196,0.35);
+  }
+
+  /* =========================
+     YELLOW
+  ========================= */
+
+  .clay-yellow{
+    background:
+      linear-gradient(
+        135deg,
+        rgba(255,234,167,0.96),
+        rgba(255,209,102,0.92)
+      );
+
+    box-shadow:
+      0 10px 25px rgba(255,209,102,0.35);
+  }
+
+  /* =========================
+     PEACH
+  ========================= */
+
+  .clay-peach{
+    background:
+      linear-gradient(
+        135deg,
+        rgba(255,198,165,0.96),
+        rgba(255,179,138,0.92)
+      );
+
+    box-shadow:
+      0 10px 25px rgba(255,179,138,0.35);
+  }
+
+  /* =========================
+     TEXT GRADIENT
+  ========================= */
+
+  .text-gradient{
+    background:
+      linear-gradient(
+        90deg,
+        #f7a8d5,
+        #cdb4ff,
+        #89d8ff
+      );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+  }
+
+  /* =========================
+     SHIMMER
+  ========================= */
+
+  .shimmer-text{
+    background:
+      linear-gradient(
+        90deg,
+        #24182c,
+        #f7a8d5,
+        #24182c
+      );
+
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    animation: shimmer 3s linear infinite;
+  }
 }
