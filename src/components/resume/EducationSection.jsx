@@ -47,6 +47,7 @@ const EducationSection = () => {
               border-white/35
             "
           >
+            {/* year */}
             <p
               className="
                 text-[11px]
@@ -63,6 +64,7 @@ const EducationSection = () => {
               {item.year}
             </p>
 
+            {/* title */}
             <h4
               className="
                 mt-2
@@ -77,6 +79,7 @@ const EducationSection = () => {
               {item.title}
             </h4>
 
+            {/* place */}
             <p
               className="
                 mt-1
@@ -88,6 +91,36 @@ const EducationSection = () => {
             >
               {item.place}
             </p>
+
+            {/* extra badge */}
+            {item.extra && (
+              <div className="mt-4">
+                <span
+                  className="
+                    inline-flex
+
+                    rounded-full
+
+                    bg-white/70
+
+                    px-3
+                    py-1
+
+                    text-[11px]
+                    font-black
+
+                    tracking-wide
+
+                    text-[#23163a]
+
+                    border
+                    border-white/40
+                  "
+                >
+                  {item.extra}
+                </span>
+              </div>
+            )}
           </div>
         ))}
       </div>

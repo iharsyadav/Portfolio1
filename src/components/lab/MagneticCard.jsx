@@ -8,9 +8,7 @@ const MagneticCard = () => {
 
   return (
     <LabTile title="MAGNETIC BUTTON" tone="clay-pink">
-
       <div className="grid place-items-center h-full">
-
         <button
           ref={ref}
           onMouseMove={(e) => {
@@ -19,8 +17,8 @@ const MagneticCard = () => {
 
             el.style.transform = `
               translate(
-                ${(e.clientX - r.left - r.width / 2) / 4}px,
-                ${(e.clientY - r.top - r.height / 2) / 4}px
+                ${(e.clientX - r.left - r.width / 2) / 5}px,
+                ${(e.clientY - r.top - r.height / 2) / 5}px
               )
             `;
           }}
@@ -30,28 +28,28 @@ const MagneticCard = () => {
             }
           }}
           className="
-            rounded-full
+            clay-sm
+            clay-mint
 
-            bg-white/75
+            rounded-full
 
             px-8
             py-4
 
-            text-[1rem]
+            text-[1.15rem]
             font-black
 
             text-[#24172f]
 
-            shadow-[0_8px_20px_rgba(0,0,0,0.08)]
-
             transition-all
+            duration-300
+
+            hover:scale-105
           "
         >
           Hover me ✨
         </button>
-
       </div>
-
     </LabTile>
   );
 };

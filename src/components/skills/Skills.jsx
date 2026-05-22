@@ -59,10 +59,7 @@ const Skills = () => {
 
         <div className="mt-24 space-y-16">
           {skillsData.map((group) => (
-            <SkillsGroup
-              key={group.title}
-              group={group}
-            />
+            <SkillsGroup key={group.title} group={group} />
           ))}
         </div>
       </div>

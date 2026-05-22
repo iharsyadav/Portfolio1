@@ -10,17 +10,17 @@ const ContactField = ({
       htmlFor={id}
       className="block"
     >
-
       <span
         className="
           mb-3
           block
 
-          text-[0.78rem]
+          text-[11px]
+
           font-black
           uppercase
 
-          tracking-[0.22em]
+          tracking-[0.24em]
 
           text-black/45
         "
@@ -29,7 +29,6 @@ const ContactField = ({
       </span>
 
       {children}
-
     </label>
   );
 };

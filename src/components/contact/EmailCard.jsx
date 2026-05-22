@@ -17,20 +17,17 @@ const EmailCard = ({
         }, 1500);
       }}
       className="
+        clay-sky
+
+
         relative
         overflow-hidden
 
         w-full
 
-        rounded-[36px]
-
-        bg-[#9fdcff]
-
-        p-8
+        p-7
 
         text-left
-
-        shadow-[0_16px_40px_rgba(170,220,255,0.24)]
 
         transition-all
         duration-300
@@ -38,27 +35,26 @@ const EmailCard = ({
         hover:-translate-y-1
       "
     >
-
       <div
         className="
           absolute
           inset-0
 
           bg-gradient-to-br
-          from-white/12
+          from-white/10
           to-transparent
         "
       />
 
       <div className="relative z-10">
-
         <p
           className="
-            text-[0.78rem]
+            text-[11px]
+
             font-black
             uppercase
 
-            tracking-[0.22em]
+            tracking-[0.24em]
 
             text-black/45
           "
@@ -68,14 +64,14 @@ const EmailCard = ({
 
         <p
           className="
-            mt-4
+            mt-3
 
-            text-[1.7rem]
+            text-[2rem]
             leading-none
 
             font-black
 
-            tracking-[-0.04em]
+            tracking-[-0.05em]
 
             text-[#1d1230]
           "
@@ -85,18 +81,16 @@ const EmailCard = ({
 
         <p
           className="
-            mt-3
+            mt-2
 
-            text-[0.95rem]
+            text-[14px]
 
             text-black/50
           "
         >
           {copied ? "Copied ✓" : "Click to copy"}
         </p>
-
       </div>
-
     </button>
   );
 };

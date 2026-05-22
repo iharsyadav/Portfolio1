@@ -17,7 +17,7 @@ const skillsData = [
         name: "JavaScript",
         icon: "JS",
         tone: "clay-yellow",
-        level: 92,
+        level: 82,
       },
 
       {
@@ -59,14 +59,14 @@ const skillsData = [
         name: "GSAP",
         icon: "✨",
         tone: "clay-peach",
-        level: 70,
+        level: 60,
       },
 
       {
         name: "Glassmorphism",
         icon: "🧊",
         tone: "clay-sky",
-        level: 85,
+        level: 75,
       },
 
       {
@@ -87,14 +87,14 @@ const skillsData = [
         name: "Git",
         icon: "🌿",
         tone: "clay-peach",
-        level: 85,
+        level: 75,
       },
 
       {
         name: "GitHub",
         icon: "🐙",
         tone: "clay-lavender",
-        level: 85,
+        level: 80,
       },
 
       {
@@ -109,6 +109,24 @@ const skillsData = [
         icon: "🟦",
         tone: "clay-sky",
         level: 95,
+      },
+      {
+        name: "Notion",
+        icon: "⚫",
+        tone: "clay-lavender",
+        level: 70,
+      },
+      {
+        name: "Figma",
+        icon: "🎨",
+        tone: "clay-pink",
+        level: 40,
+      },
+      {
+        name: "OpenAI",
+        icon: "🤖",
+        tone: "clay-mint",
+        level: 60,
       },
     ],
   },
@@ -126,38 +144,22 @@ const skillsData = [
       },
 
       {
-        name: "Next.js",
-        icon: "▲",
-        tone: "clay-lavender",
-        level: 60,
-      },
-
-      {
-        name: "Three.js",
-        icon: "🔺",
+        name: "Node.js",
+        icon: "🟢",
         tone: "clay-mint",
-        level: 40,
+        level: 76,
       },
-
       {
-        name: "Testing",
-        icon: "🧪",
-        tone: "clay-peach",
-        level: 55,
-      },
-
-      {
-        name: "A11y",
-        icon: "♿",
-        tone: "clay-pink",
-        level: 65,
-      },
-
-      {
-        name: "Perf",
+        name: "Express.js",
         icon: "🚀",
-        tone: "clay-yellow",
-        level: 70,
+        tone: "clay-peach",
+        level: 74,
+      },
+      {
+        name: "MongoDB",
+        icon: "🍃",
+        tone: "clay-sky",
+        level: 62,
       },
     ],
   },

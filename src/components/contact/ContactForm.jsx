@@ -7,43 +7,31 @@ const ContactForm = () => {
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        alert("Thanks! I'll get back to you soon.");
       }}
       className="
+        clay
+
         relative
         overflow-hidden
 
-        rounded-[42px]
-
-        border
-        border-white/20
-
-        bg-white/28
-
-        p-10
-
-        shadow-[0_20px_60px_rgba(214,190,240,0.22)]
-
-        backdrop-blur-xl
+        p-8
       "
     >
-
-      {/* GLOW */}
+      {/* gloss */}
       <div
         className="
           absolute
           inset-0
 
           bg-gradient-to-br
-          from-white/12
+          from-white/10
           to-transparent
 
           pointer-events-none
         "
       />
 
-      <div className="relative z-10 space-y-7">
-
+      <div className="relative z-10 space-y-6">
         <ContactField
           label="Your name"
           id="name"
@@ -51,33 +39,16 @@ const ContactForm = () => {
           <input
             id="name"
             type="text"
-            placeholder="Ada Lovelace"
-            required
+            placeholder="enter your name"
             className="
-              h-[66px]
+              clay-input
+
+              h-[58px]
               w-full
 
-              rounded-[24px]
+              px-5
 
-              border
-              border-white/25
-
-              bg-white/35
-
-              px-6
-
-              text-[1rem]
-              font-medium
-
-              text-[#1d1230]
-
-              outline-none
-
-              shadow-[inset_0_2px_10px_rgba(255,255,255,0.3)]
-
-              placeholder:text-black/35
-
-              focus:border-white/40
+              text-[15px]
             "
           />
         </ContactField>
@@ -89,33 +60,16 @@ const ContactForm = () => {
           <input
             id="email"
             type="email"
-            placeholder="ada@calculus.io"
-            required
+            placeholder="enter your email"
             className="
-              h-[66px]
+              clay-input
+
+              h-[58px]
               w-full
 
-              rounded-[24px]
+              px-5
 
-              border
-              border-white/25
-
-              bg-white/35
-
-              px-6
-
-              text-[1rem]
-              font-medium
-
-              text-[#1d1230]
-
-              outline-none
-
-              shadow-[inset_0_2px_10px_rgba(255,255,255,0.3)]
-
-              placeholder:text-black/35
-
-              focus:border-white/40
+              text-[15px]
             "
           />
         </ContactField>
@@ -126,58 +80,38 @@ const ContactForm = () => {
         >
           <textarea
             id="message"
-            rows={7}
-            placeholder="Tell me about your idea…"
-            required
+            rows={6}
+            placeholder="Tell me about your idea..."
             className="
+              clay-input
+
               w-full
 
               resize-none
 
-              rounded-[28px]
+              px-5
+              py-4
 
-              border
-              border-white/25
-
-              bg-white/35
-
-              px-6
-              py-5
-
-              text-[1rem]
-              leading-[1.8]
-
-              text-[#1d1230]
-
-              outline-none
-
-              shadow-[inset_0_2px_10px_rgba(255,255,255,0.3)]
-
-              placeholder:text-black/35
-
-              focus:border-white/40
+              text-[15px]
+              leading-[1.7]
             "
           />
         </ContactField>
 
         <button
           className="
-            h-[68px]
+            clay-pink
+
+            h-[58px]
 
             rounded-full
 
-            bg-[#ef9dca]
+            px-8
 
-            px-10
-
-            text-[1rem]
+            text-[15px]
             font-black
 
-            tracking-[-0.02em]
-
-            text-[#1f1230]
-
-            shadow-[0_10px_25px_rgba(239,157,202,0.35)]
+            text-[#1d1230]
 
             transition-all
             duration-300
@@ -187,9 +121,7 @@ const ContactForm = () => {
         >
           Send message →
         </button>
-
       </div>
-
     </form>
   );
 };

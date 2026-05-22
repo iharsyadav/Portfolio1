@@ -83,7 +83,7 @@ const FloatingCards = () => {
             text-[#21152b]
           "
         >
-          42+
+          20+
         </h3>
 
         <p
@@ -95,7 +95,7 @@ const FloatingCards = () => {
             text-black/45
           "
         >
-          PROJECTS SHIPPED
+          PROJECTS COMPLETED
         </p>
       </FloatCard>
 
@@ -136,7 +136,7 @@ const FloatingCards = () => {
                 text-[#21152b]
               "
             >
-              Lighthouse 98
+              Lighthouse 95+
             </h4>
 
             <p className="mt-1 text-sm text-black/45">
@@ -178,7 +178,7 @@ const FloatingCards = () => {
             text-[#21152b]
           "
         >
-          Next.js · Three.js
+          TypeScript
         </h3>
       </FloatCard>
 

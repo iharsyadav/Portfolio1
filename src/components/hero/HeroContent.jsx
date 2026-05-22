@@ -1,6 +1,6 @@
 import HeroBadge from "./HeroBadge";
 import HeroButtons from "./HeroButtons";
-import HeroStack from "./HeroStack";
+
 import useTypewriter from "./useTypewriter";
 
 const HeroContent = () => {
@@ -40,8 +40,6 @@ const HeroContent = () => {
       </p>
 
       <HeroButtons />
-
-      <HeroStack />
 
     </div>
   );

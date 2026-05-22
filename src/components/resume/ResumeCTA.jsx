@@ -6,6 +6,12 @@ const ResumeCTA = () => {
       className="
         col-span-12
 
+        clay
+        clay-peach
+
+        relative
+        overflow-hidden
+
         flex
         flex-wrap
         items-center
@@ -13,29 +19,54 @@ const ResumeCTA = () => {
 
         gap-6
 
-        rounded-[38px]
-
-        bg-white/35
-
-        px-10
-        py-8
-
-        backdrop-blur-xl
+        px-8
+        py-7
 
         border
-        border-white/35
-
-        shadow-[0_18px_40px_rgba(215,205,230,0.25)]
+        border-white/25
       "
     >
-      <div>
+      {/* gloss */}
+      <div
+        className="
+          absolute
+          inset-0
+
+          bg-gradient-to-br
+          from-white/12
+          to-transparent
+
+          pointer-events-none
+        "
+      />
+
+      {/* blur */}
+      <div
+        className="
+          absolute
+          -top-12
+          -right-12
+
+          h-36
+          w-36
+
+          rounded-full
+
+          bg-white/20
+
+          blur-3xl
+        "
+      />
+
+      {/* content */}
+      <div className="relative z-10">
         <h3
           className="
             text-[2rem]
 
             font-black
 
-            tracking-[-0.04em]
+            tracking-[-0.05em]
 
             text-[#23163a]
           "
@@ -47,62 +78,97 @@ const ResumeCTA = () => {
           className="
             mt-2
 
-            text-[1rem]
+            text-[15px]
+            leading-[1.7]
 
-            text-black/50
+            text-black/55
           "
         >
           One page, beautifully typeset, recruiter-ready.
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-4">
+      {/* buttons */}
+      <div className="relative z-10 flex flex-wrap gap-3">
+        
+        {/* download resume */}
         <a
-          href="#"
+          href="/resume.pdf"
+          download
           className="
+            clay
             clay-pink
 
             rounded-full
 
             px-6
-            py-4
+            py-3
 
-            text-sm
-            font-bold
+            text-[13px]
+            font-black
+
+            text-[#23163a]
+
+            transition-all
+            duration-300
+
+            hover:-translate-y-1
           "
         >
           ↓ Download Resume
         </a>
 
+        {/* linkedin */}
         <a
-          href="#"
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noreferrer"
           className="
+            clay
             clay-sky
 
             rounded-full
 
             px-6
-            py-4
+            py-3
 
-            text-sm
-            font-bold
+            text-[13px]
+            font-black
+
+            text-[#23163a]
+
+            transition-all
+            duration-300
+
+            hover:-translate-y-1
           "
         >
           LinkedIn
         </a>
 
+        {/* github */}
         <a
-          href="#"
+          href="https://github.com/iharsyadav"
+          target="_blank"
+          rel="noreferrer"
           className="
+            clay
             clay-lavender
 
             rounded-full
 
             px-6
-            py-4
+            py-3
 
-            text-sm
-            font-bold
+            text-[13px]
+            font-black
+
+            text-[#23163a]
+
+            transition-all
+            duration-300
+
+            hover:-translate-y-1
           "
         >
           GitHub

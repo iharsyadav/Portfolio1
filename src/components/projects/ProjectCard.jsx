@@ -1,30 +1,26 @@
 // src/components/projects/ProjectCard.jsx
 
 const ProjectCard = ({ project, setOpen }) => {
-  const tech = project.tech || [];
+  const tech = project.stack || [];
 
   return (
     <article
       onClick={() => setOpen?.(project)}
       className={`
         ${project.tone}
+        clay
 
         relative
         overflow-hidden
 
-        rounded-[36px]
+        h-[300px]
 
-        h-[480px]
-        w-full
-
-        px-7
-        pt-7
-        pb-6
+        px-4
+        pt-4
+        pb-3
 
         border
         border-white/20
-
-        shadow-[0_15px_40px_rgba(210,190,230,0.18)]
 
         flex
         flex-col
@@ -37,46 +33,48 @@ const ProjectCard = ({ project, setOpen }) => {
         cursor-pointer
       `}
     >
-
       {/* overlay */}
       <div
         className="
           absolute
           inset-0
+
           bg-gradient-to-br
           from-white/10
           to-transparent
+
           pointer-events-none
         "
       />
 
-      {/* HEADER */}
-      <div className="relative z-10 flex items-start justify-between gap-4">
-
-        <div>
-
-          {/* TAG */}
+      {/* header */}
+      <div className="relative z-10 flex items-start justify-between gap-2">
+        <div className="min-w-0">
+          {/* tag */}
           <p
             className="
-              text-[12px]
+              text-[10px]
               uppercase
-              tracking-[0.24em]
+
+              tracking-[0.22em]
+
               font-black
+
               text-black/45
             "
           >
             {project.tag}
           </p>
 
-          {/* TITLE */}
+          {/* title */}
           <h3
             className="
-              mt-3
+              mt-2
 
-              text-[2rem]
-              leading-[0.95]
+              text-[1.55rem]
+              leading-[0.92]
 
-              tracking-[-0.05em]
+              tracking-[-0.06em]
 
               font-black
 
@@ -85,114 +83,114 @@ const ProjectCard = ({ project, setOpen }) => {
           >
             {project.title}
           </h3>
-
         </div>
 
+        {/* featured */}
         {project.featured && (
           <div
             className="
               shrink-0
 
+              clay-sm
+
               rounded-full
 
-              bg-white/75
+              px-3
+              py-1.5
 
-              px-4
-              py-2
+              text-[9px]
 
-              text-[0.8rem]
               font-black
               uppercase
 
-              tracking-[0.15em]
+              tracking-[0.14em]
 
               text-[#24152f]
-
-              shadow-[0_5px_12px_rgba(0,0,0,0.06)]
             "
           >
             ★ Featured
           </div>
         )}
-
       </div>
 
-      {/* PREVIEW */}
+      {/* preview */}
       <div
         className="
           relative
           z-10
 
-          mt-6
+          mt-3
 
-          h-[180px]
+          h-[95px]
 
-          rounded-[30px]
+          rounded-[18px]
 
-          bg-white/28
+          bg-white/25
 
           flex
           items-center
           justify-center
 
-          text-[4.5rem]
+          text-[3rem]
+
           font-black
 
-          text-black/35
+          text-black/25
 
           shrink-0
         "
       >
-        {project.preview}
+        {project.title.charAt(0)}
       </div>
 
-      {/* DESCRIPTION */}
+      {/* description */}
       <p
         className="
           relative
           z-10
 
-          mt-5
+          mt-3
 
-          text-[1rem]
-          leading-[1.55]
+          text-[12px]
+          leading-[1.45]
 
-          text-black/58
+          text-black/55
+
+          line-clamp-2
         "
       >
-        {project.description}
+        {project.blurb}
       </p>
 
-      {/* TECH */}
+      {/* tech */}
       <div
         className="
           relative
           z-10
 
-          mt-5
+          mt-3
 
           flex
           flex-wrap
-          gap-2
+          gap-1.5
         "
       >
         {tech.map((item) => (
           <span
             key={item}
             className="
+              clay-sm
+
               rounded-full
 
-              bg-white/75
+              px-2.5
+              py-1
 
-              px-4
-              py-2
+              text-[10px]
 
-              text-[0.86rem]
               font-bold
 
               text-[#24172f]
-
-              shadow-[0_4px_10px_rgba(0,0,0,0.04)]
             "
           >
             {item}
@@ -200,35 +198,36 @@ const ProjectCard = ({ project, setOpen }) => {
         ))}
       </div>
 
-      {/* FOOTER */}
+      {/* footer */}
       <div
         className="
           relative
           z-10
 
           mt-auto
-          pt-5
+          pt-2
 
           flex
           items-center
           justify-between
         "
       >
-
         <span
           className="
-            text-[1rem]
+            text-[12px]
+
             font-bold
 
-            text-black/45
+            text-black/40
           "
         >
-          {project.level}
+          {project.difficulty}
         </span>
 
         <button
           className="
-            text-[1.1rem]
+            text-[13px]
+
             font-black
 
             tracking-[-0.03em]
@@ -238,9 +237,7 @@ const ProjectCard = ({ project, setOpen }) => {
         >
           Case study →
         </button>
-
       </div>
-
     </article>
   );
 };

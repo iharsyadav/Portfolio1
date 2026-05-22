@@ -10,15 +10,12 @@ const SocialCard = ({
       href="#"
       className={`
         ${tone}
+        clay
 
         relative
         overflow-hidden
 
-        rounded-[32px]
-
-        p-6
-
-        shadow-[0_14px_35px_rgba(214,190,240,0.18)]
+        p-5
 
         transition-all
         duration-300
@@ -26,7 +23,6 @@ const SocialCard = ({
         hover:-translate-y-1
       `}
     >
-
       <div
         className="
           absolute
@@ -39,10 +35,10 @@ const SocialCard = ({
       />
 
       <div className="relative z-10">
-
         <p
           className="
-            text-[0.72rem]
+            text-[10px]
+
             font-black
             uppercase
 
@@ -58,7 +54,8 @@ const SocialCard = ({
           className="
             mt-3
 
-            text-[1rem]
+            text-[15px]
+
             font-black
 
             tracking-[-0.03em]
@@ -68,9 +65,7 @@ const SocialCard = ({
         >
           {handle}
         </p>
-
       </div>
-
     </a>
   );
 };

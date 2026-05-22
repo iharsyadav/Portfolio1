@@ -4,24 +4,19 @@ import SocialCard from "./SocialCard";
 
 const socials = [
   {
-    tone: "bg-[#d9c7ff]",
+    tone: "clay-lavender",
     label: "LinkedIn",
-    handle: "@ariapatel",
+    handle: "@iharsyadav",
   },
   {
-    tone: "bg-[#ffc89e]",
+    tone: "clay-peach",
     label: "GitHub",
-    handle: "@ariadev",
+    handle: "@iharsyadav",
   },
   {
-    tone: "bg-[#ffe58f]",
-    label: "Twitter",
-    handle: "@aria_codes",
-  },
-  {
-    tone: "bg-[#ffb7d7]",
+    tone: "clay-pink",
     label: "Instagram",
-    handle: "@aria.builds",
+    handle: "@iharsyadav",
   },
 ];
 
@@ -31,17 +26,16 @@ const SocialGrid = () => {
       className="
         grid
         grid-cols-2
-        gap-5
+
+        gap-4
       "
     >
-
       {socials.map((item) => (
         <SocialCard
           key={item.label}
           {...item}
         />
       ))}
-
     </div>
   );
 };

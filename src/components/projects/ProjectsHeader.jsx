@@ -3,15 +3,14 @@
 const ProjectsHeader = () => {
   return (
     <div className="text-center">
-
       <span
         className="
           inline-flex
           items-center
 
-          rounded-full
-
           clay-pink
+
+          rounded-full
 
           px-5
           py-2
@@ -59,7 +58,6 @@ const ProjectsHeader = () => {
       >
         A mix of client work, side projects and UI labs.
       </p>
-
     </div>
   );
 };

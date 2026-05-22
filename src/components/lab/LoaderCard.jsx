@@ -5,13 +5,11 @@ import LabTile from "./LabTile";
 const LoaderCard = () => {
   return (
     <LabTile title="SQUISHY LOADER" tone="clay-mint">
-
       <div className="grid place-items-center h-full">
-
-        <div className="flex flex-col items-center gap-6">
-
-          <div className="flex gap-3">
-
+        <div className="flex flex-col items-center gap-8">
+          
+          {/* dots */}
+          <div className="flex items-center gap-4">
             {[0, 1, 2].map((i) => (
               <span
                 key={i}
@@ -21,33 +19,35 @@ const LoaderCard = () => {
 
                   rounded-full
 
-                  bg-[#f4a6cb]
+                  bg-clay-pink
 
                   animate-bounce
+
+                  shadow-[0_6px_16px_rgba(244,166,203,0.35)]
                 "
                 style={{
                   animationDelay: `${i * 0.12}s`,
                 }}
               />
             ))}
-
           </div>
 
+          {/* text */}
           <p
             className="
-              text-[0.95rem]
+              text-[15px]
+
               font-bold
 
-              text-black/50
+              tracking-[-0.02em]
+
+              text-muted-foreground
             "
           >
             Loading delight...
           </p>
-
         </div>
-
       </div>
-
     </LabTile>
   );
 };

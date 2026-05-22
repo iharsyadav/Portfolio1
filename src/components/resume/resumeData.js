@@ -3,62 +3,51 @@
 export const experience = [
   {
     role: "Frontend Freelancer",
-    org: "Self-employed · 2024 — Now",
-    body: "Shipping marketing sites, dashboards and component libraries for early-stage startups.",
+    org: "Personal Projects · 2024 — Now",
+    body: "Building modern React and Tailwind projects focused on animations, responsive UI and reusable components.",
   },
 
   {
-    role: "UI Developer Intern",
-    org: "Pixelpath Studio · 2023",
-    body: "Rebuilt design system in Tailwind; cut bundle 38%; led motion guidelines.",
+    role: "Open Source Learner",
+    org: "GitHub · 2024 — Now",
+    body: "Exploring frontend ecosystems, improving UI skills and contributing through personal experiments and component systems.",
   },
 ];
 
 export const education = [
   {
-    year: "2024 — Now",
-    title: "B.Sc. Computer Science",
-    place: "State University",
+    year: "2020 — 2024",
+    title: "B.Tech in Information Technology",
+    place: "I.M.S Engineering College, Ghaziabad",
+    extra: "AKTU • CGPA: 6.77",
   },
 
   {
-    year: "2023",
-    title: "Frontend Career Path",
-    place: "Scrimba",
+    year: "2020",
+    title: "CBSE Class 12",
+    place: "Dev Krishan Public School, Baghpat",
+    extra: "PCM ,81.5% aggregate",
   },
 
   {
-    year: "2022",
-    title: "Responsive Web Design",
-    place: "freeCodeCamp",
+    year: "2018",
+    title: "CBSE Class 10",
+    place: "Dev Krishan Public School, Baghpat",
+    extra: "87% aggregate",
   },
 ];
 
 export const achievements = [
   {
-    n: "12",
-    l: "Open-source PRs",
+    n: "20+",
+    l: "PRs",
   },
 
   {
-    n: "5",
-    l: "Hackathon wins",
-  },
-
-  {
-    n: "300+",
+    n: "100+",
     l: "GitHub commits / yr",
-  },
-
-  {
-    n: "8",
-    l: "Certifications",
   },
 ];
 
 export const certs = [
-  "Meta Frontend",
-  "Scrimba React",
-  "Google UX",
-  "FCC Responsive",
 ];

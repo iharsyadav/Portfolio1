@@ -1,8 +1,8 @@
 const stats = [
-  { n: "42+", l: "Projects" },
-  { n: "3yr", l: "Coding" },
-  { n: "18", l: "Technologies" },
-  { n: "98", l: "Avg Lighthouse" },
+  { n: "20+", l: "Projects" },
+  { n: "2yr", l: "Coding" },
+  { n: "15+", l: "Technologies" },
+  { n: "95", l: "Avg Lighthouse" },
 ];
 
 const StatsGrid = () => {

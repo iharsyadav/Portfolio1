@@ -43,67 +43,86 @@ const AboutCards = () => {
   return (
     <div
       className="
-        mt-14
-
+        mt-12
         grid
         grid-cols-1
         md:grid-cols-2
         xl:grid-cols-3
-
-        gap-[28px]
+        gap-6
       "
     >
-      {cards.map((c) => (
+      {cards.map((c, i) => (
         <div
           key={c.title}
           className={`
             ${c.tone}
+            clay
 
             relative
             overflow-hidden
 
-            rounded-[36px]
+            min-h-[210px]
 
-            h-[252px]
-
-            px-[36px]
-            pt-[34px]
-
-            shadow-[0_18px_50px_rgba(215,205,225,0.42)]
+            px-7
+            pt-7
+            pb-7
 
             border
             border-white/30
+
+            transition-all
+            duration-500
+
+            hover:-translate-y-2
+            hover:scale-[1.02]
           `}
+          style={{
+            animationDelay: `${i * 120}ms`,
+          }}
         >
-          {/* soft gloss */}
+          {/* glow */}
           <div
             className="
               absolute
               inset-0
-
-              bg-[linear-gradient(135deg,rgba(255,255,255,0.12),transparent_45%)]
-
+              bg-[linear-gradient(135deg,rgba(255,255,255,0.22),transparent_45%)]
               pointer-events-none
+            "
+          />
+
+          {/* blur */}
+          <div
+            className="
+              absolute
+              -top-10
+              -right-10
+
+              h-28
+              w-28
+
+              rounded-full
+              bg-white/20
+              blur-3xl
             "
           />
 
           {/* icon */}
           <div
             className="
+              clay-sm
+
               flex
               items-center
               justify-center
 
-              h-[70px]
-              w-[70px]
+              h-[62px]
+              w-[62px]
 
               rounded-full
 
-              bg-[#f6edf4]
+              text-[26px]
 
-              text-[32px]
-
-              shadow-[0_8px_20px_rgba(255,255,255,0.45)]
+              animate-float
             "
           >
             {c.icon}
@@ -112,16 +131,16 @@ const AboutCards = () => {
           {/* title */}
           <h3
             className="
-              mt-[26px]
+              mt-6
 
-              text-[28px]
+              text-[32px]
               leading-none
 
               font-black
 
               tracking-[-0.05em]
 
-              text-[#1f1430]
+              text-foreground
             "
           >
             {c.title}
@@ -130,16 +149,16 @@ const AboutCards = () => {
           {/* body */}
           <p
             className="
-              mt-[16px]
+              mt-4
 
-              max-w-[28ch]
+              max-w-[26ch]
 
-              text-[16px]
-              leading-[1.45]
+              text-[15px]
+              leading-[1.55]
 
               font-medium
 
-              text-black/48
+              text-muted-foreground
             "
           >
             {c.body}

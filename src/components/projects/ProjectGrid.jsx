@@ -1,23 +1,19 @@
-// src/components/projects/ProjectsGrid.jsx
+// src/components/projects/ProjectGrid.jsx
 
 import ProjectCard from "./ProjectCard";
 
-const ProjectsGrid = ({
-  projects,
-  setOpen,
-}) => {
+const ProjectGrid = ({ projects, setOpen }) => {
   return (
     <div
       className="
-        mt-12
+       mt-8
 
-        grid
+    grid
+    grid-cols-1
+    md:grid-cols-2
+    xl:grid-cols-3
 
-        grid-cols-1
-        md:grid-cols-2
-        lg:grid-cols-3
-
-        gap-6
+    gap-4
       "
     >
       {projects.map((project) => (
@@ -31,4 +27,4 @@ const ProjectsGrid = ({
   );
 };
 
-export default ProjectsGrid;
+export default ProjectGrid;

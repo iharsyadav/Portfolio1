@@ -5,56 +5,77 @@ const LabTile = ({ title, tone, children }) => {
     <div
       className={`
         ${tone}
+        clay
 
         relative
         overflow-hidden
 
-        rounded-[36px]
+        h-[295px]
 
-        h-[330px]
-
-        px-8
-        py-7
+        px-6
+        py-6
 
         border
-        border-white/20
+        border-white/25
 
-        shadow-[0_15px_40px_rgba(210,190,230,0.18)]
+        transition-all
+        duration-500
+
+        hover:-translate-y-1
       `}
     >
-
-      {/* overlay */}
+      {/* gloss */}
       <div
         className="
           absolute
           inset-0
-          bg-gradient-to-br
-          from-white/10
-          to-transparent
+
+          bg-[linear-gradient(135deg,rgba(255,255,255,0.18),transparent_45%)]
+
           pointer-events-none
         "
       />
 
-      <div className="relative z-10 h-full flex flex-col">
+      {/* blur */}
+      <div
+        className="
+          absolute
+          -top-10
+          -right-10
 
+          h-32
+          w-32
+
+          rounded-full
+
+          bg-white/15
+
+          blur-3xl
+        "
+      />
+
+      <div className="relative z-10 h-full flex flex-col">
+        {/* label */}
         <p
           className="
             text-[12px]
             uppercase
-            tracking-[0.24em]
+
+            tracking-[0.22em]
+
             font-black
+
             text-black/45
           "
         >
           {title}
         </p>
 
-        <div className="flex-1 mt-6">
+        {/* content */}
+        <div className="flex-1 mt-5">
           {children}
         </div>
-
       </div>
-
     </div>
   );
 };

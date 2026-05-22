@@ -5,21 +5,20 @@ const SkillCard = ({ skill }) => {
     <div
       className={`
         ${skill.tone}
+        clay
 
         relative
         overflow-hidden
 
-        rounded-[34px]
+        h-[150px]
+        w-full
 
-        h-[188px]
-
-        px-5
-        pt-5
+        px-4
+        pt-4
+        pb-4
 
         border
-        border-white/30
-
-        shadow-[0_18px_40px_rgba(215,205,230,0.45)]
+        border-white/25
 
         transition-all
         duration-300
@@ -27,21 +26,41 @@ const SkillCard = ({ skill }) => {
         hover:-translate-y-1
       `}
     >
-      {/* GLOSS */}
+      {/* gloss */}
       <div
         className="
           absolute
           inset-0
 
-          bg-[linear-gradient(135deg,rgba(255,255,255,0.15),transparent_40%)]
+          bg-[linear-gradient(135deg,rgba(255,255,255,0.18),transparent_45%)]
 
           pointer-events-none
         "
       />
 
-      {/* ICON */}
+      {/* blur */}
       <div
         className="
+          absolute
+          -top-10
+          -right-10
+
+          h-24
+          w-24
+
+          rounded-full
+
+          bg-white/20
+
+          blur-3xl
+        "
+      />
+
+      {/* icon */}
+      <div
+        className="
+          clay-sm
+
           relative
           z-10
 
@@ -49,43 +68,39 @@ const SkillCard = ({ skill }) => {
           items-center
           justify-center
 
-          h-[58px]
-          w-[58px]
+          h-[48px]
+          w-[48px]
 
           rounded-full
 
-          bg-[#f8f1f6]
-
-          text-[26px]
-
-          shadow-[0_10px_24px_rgba(255,255,255,0.5)]
+          text-[20px]
         "
       >
         {skill.icon}
       </div>
 
-      {/* TITLE */}
+      {/* title */}
       <h3
         className="
           relative
           z-10
 
-          mt-5
+          mt-4
 
-          text-[18px]
+          text-[15px]
           leading-none
 
           font-black
 
           tracking-[-0.03em]
 
-          text-[#23163a]
+          text-foreground
         "
       >
         {skill.name}
       </h3>
 
-      {/* PROGRESS TRACK */}
+      {/* progress */}
       <div
         className="
           relative
@@ -93,27 +108,25 @@ const SkillCard = ({ skill }) => {
 
           mt-5
 
-          h-[12px]
+          h-[10px]
           w-full
 
           overflow-hidden
 
           rounded-full
 
-          bg-white/45
+          bg-white/40
         "
       >
-        {/* PROGRESS */}
         <div
           className="
             h-full
-
             rounded-full
 
             bg-gradient-to-r
-            from-[#d97ae5]
-            via-[#78bfff]
-            to-[#5dd9d2]
+            from-clay-pink
+            via-clay-lavender
+            to-clay-sky
           "
           style={{
             width: `${skill.level}%`,
@@ -121,23 +134,8 @@ const SkillCard = ({ skill }) => {
         />
       </div>
 
-      {/* PERCENT */}
-      <p
-        className="
-          relative
-          z-10
-
-          mt-2
-
-          text-[14px]
-
-          font-semibold
-
-          text-black/50
-        "
-      >
-        {skill.level}%
-      </p>
+      {/* percent */}
+  
     </div>
   );
 };

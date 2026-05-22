@@ -1,24 +1,20 @@
 const timeline = [
   {
-    year: "2022",
+    year: "2024",
     title: "Hello, HTML & CSS",
     body: "First static sites, fell in love with the cascade.",
   },
   {
-    year: "2023",
+    year: "2025",
     title: "JavaScript & React",
     body: "From DOM to components, hooks, and state.",
   },
   {
-    year: "2024",
+    year: "2026",
     title: "Tailwind & Motion",
-    body: "Design systems, framer-motion, real product UI.",
+    body: "Completed projects, performance, accessibility.",
   },
-  {
-    year: "2025",
-    title: "Shipping & Polish",
-    body: "Freelance projects, performance, accessibility.",
-  },
+
 ];
 
 const JourneyTimeline = () => {

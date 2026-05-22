@@ -8,7 +8,6 @@ const SpotlightCard = () => {
 
   return (
     <LabTile title="SPOTLIGHT SURFACE" tone="clay-sky">
-
       <div
         ref={ref}
         onMouseMove={(e) => {
@@ -26,14 +25,44 @@ const SpotlightCard = () => {
 
           rounded-[28px]
 
-          bg-white/20
-        "
-        style={{
-          background:
-            "radial-gradient(180px circle at var(--x,50%) var(--y,50%), rgba(255,255,255,0.55), transparent 60%)",
-        }}
-      >
+          bg-[#b8e3ff]/35
+          backdrop-blur-xl
 
+          border
+          border-white/20
+        "
+      >
+        {/* spotlight */}
+        <div
+          className="
+            absolute
+            inset-0
+            pointer-events-none
+          "
+          style={{
+            background: `
+              radial-gradient(
+                220px circle at var(--x,50%) var(--y,50%),
+                rgba(255,80,120,0.45),
+                rgba(255,120,180,0.18) 28%,
+                transparent 65%
+              )
+            `,
+          }}
+        />
+
+        {/* soft glow */}
+        <div
+          className="
+            absolute
+            inset-0
+
+            bg-white/10
+            backdrop-blur-[2px]
+          "
+        />
+
+        {/* text */}
         <div
           className="
             absolute
@@ -42,17 +71,15 @@ const SpotlightCard = () => {
             grid
             place-items-center
 
-            text-[1.2rem]
+            text-[1.15rem]
             font-black
 
-            text-black/55
+            text-[#2d2450]
           "
         >
           Move your cursor
         </div>
-
       </div>
-
     </LabTile>
   );
 };

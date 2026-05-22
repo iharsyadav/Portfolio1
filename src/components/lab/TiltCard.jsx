@@ -8,9 +8,7 @@ const TiltCard = () => {
 
   return (
     <LabTile title="3D TILT" tone="clay-peach">
-
-      <div className="grid place-items-center h-full [perspective:700px]">
-
+      <div className="grid place-items-center h-full [perspective:900px]">
         <div
           ref={ref}
           onMouseMove={(e) => {
@@ -21,8 +19,9 @@ const TiltCard = () => {
             const y = (e.clientY - r.top) / r.height - 0.5;
 
             el.style.transform = `
-              rotateY(${x * 22}deg)
-              rotateX(${-y * 22}deg)
+              rotateY(${x * 18}deg)
+              rotateX(${-y * 18}deg)
+              scale(1.03)
             `;
           }}
           onMouseLeave={() => {
@@ -31,32 +30,31 @@ const TiltCard = () => {
             }
           }}
           className="
+            clay
+            clay-pink
+
             h-[140px]
             w-[210px]
-
-            rounded-[28px]
-
-            bg-white/30
 
             grid
             place-items-center
 
-            text-[1.3rem]
+            text-[1.4rem]
             font-black
+
+            tracking-[-0.04em]
 
             text-[#24172f]
 
-            shadow-[0_15px_30px_rgba(0,0,0,0.08)]
-
             transition-transform
             duration-200
+
+            will-change-transform
           "
         >
           Tilt me
         </div>
-
       </div>
-
     </LabTile>
   );
 };
