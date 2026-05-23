@@ -4,7 +4,7 @@ import Hero from "../components/hero/Hero";
 import Lab from "../components/lab/Lab";
 import { Navbar } from "../components/layout/Navbar";
 import Projects from "../components/projects/Projects";
-import Resume from "../components/Resume/Resume";
+import Resume from "../components/resume/Resume";
 import Skills from "../components/skills/Skills";
 
 
