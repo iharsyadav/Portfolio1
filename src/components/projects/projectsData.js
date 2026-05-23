@@ -2,9 +2,9 @@
 
 const projectsData = [
   {
-    title: "Aurora Dashboard",
+    title: "CodeDotin",
 
-    tag: "SaaS analytics UI",
+    tag: "Frontend component system",
 
     tone: "clay-pink",
 
@@ -14,25 +14,24 @@ const projectsData = [
 
     stack: [
       "React",
-      "TS",
+      "Framer Motion",
       "Tailwind",
-      "Recharts",
     ],
 
     blurb:
-      "Real-time analytics dashboard with glassy charts and command palette.",
+      "Modern frontend component library featuring animated UI blocks, reusable layouts, responsive sections and premium motion interactions.",
 
-    live: "#",
+    live: "https://codedotin.netlify.app/",
 
-    code: "#",
+    code: "https://github.com/iharsyadav",
 
     category: "Web App",
   },
 
   {
-    title: "Mochi Studio",
+    title: "Authentication UI App",
 
-    tag: "Agency landing",
+    tag: "Authentication experience",
 
     tone: "clay-peach",
 
@@ -47,19 +46,19 @@ const projectsData = [
     ],
 
     blurb:
-      "Award-style scroll experience for a fictional creative studio.",
+      "Modern authentication interface with smooth page transitions, animated layouts, floating gradients and responsive onboarding screens.",
 
-    live: "#",
+    live: "https://auth-dashbord.onrender.com/",
 
-    code: "#",
+    code: "",
 
     category: "Landing",
   },
 
   {
-    title: "Glow UI Kit",
+    title: "Utility-toolkit",
 
-    tag: "Component library",
+    tag: "Developer utilities",
 
     tone: "clay-lavender",
 
@@ -72,9 +71,9 @@ const projectsData = [
     ],
 
     blurb:
-      "60+ accessible primitives with dark mode and motion baked in.",
+      "Collection of productivity utilities and reusable frontend helpers built with clean architecture, accessible UI patterns and modern styling.",
 
-    live: "#",
+    live: "https://utility-hub-iota.vercel.app/",
 
     code: "#",
 
@@ -82,9 +81,9 @@ const projectsData = [
   },
 
   {
-    title: "Pulse Player",
+    title: "SkyCast",
 
-    tag: "Music player",
+    tag: "Weather forecasting app",
 
     tone: "clay-sky",
 
@@ -93,12 +92,13 @@ const projectsData = [
     stack: [
       "React",
       "Framer Motion",
+      "OpenWeather API",
     ],
 
     blurb:
-      "Tactile music UI with shared-element transitions between views.",
+      "Interactive weather application with live forecasts, animated conditions, responsive cards and smooth micro-interactions.",
 
-    live: "#",
+    live: "https://skyicast.netlify.app/",
 
     code: "#",
 
@@ -106,9 +106,9 @@ const projectsData = [
   },
 
   {
-    title: "Claymorph Lab",
+    title: "Geovista",
 
-    tag: "UI experiments",
+    tag: "Interactive UI experiments",
 
     tone: "clay-mint",
 
@@ -116,13 +116,13 @@ const projectsData = [
 
     stack: [
       "CSS",
-      "JS",
+      "JavaScript",
     ],
 
     blurb:
-      "A playground of soft-shadow components, blob backgrounds and hover toys.",
+      "Creative collection of hover effects, glassmorphism layouts, animated cards and experimental frontend interaction concepts.",
 
-    live: "#",
+    live: "https://geovista.pages.dev/",
 
     code: "#",
 
@@ -130,9 +130,9 @@ const projectsData = [
   },
 
   {
-    title: "Tide Notes",
+    title: "Productivity Hub",
 
-    tag: "Markdown notes",
+    tag: "Task & notes manager",
 
     tone: "clay-yellow",
 
@@ -141,12 +141,13 @@ const projectsData = [
     stack: [
       "React",
       "IndexedDB",
+      "Tailwind",
     ],
 
     blurb:
-      "Offline-first notes app with command-driven editor and tags.",
+      "Productivity workspace featuring offline note-taking, task organization, local storage persistence and keyboard-focused workflows.",
 
-    live: "#",
+    live: "https://productivity-hub-7m0.pages.dev/",
 
     code: "#",
 

@@ -1,9 +1,6 @@
 // src/components/projects/ProjectModal.jsx
 
-const ProjectModal = ({
-  project,
-  setOpen,
-}) => {
+const ProjectModal = ({ project, setOpen }) => {
   return (
     <div
       onClick={() => setOpen(null)}
@@ -56,7 +53,6 @@ const ProjectModal = ({
         />
 
         <div className="relative z-10">
-
           <p
             className="
               text-[11px]
@@ -155,9 +151,10 @@ const ProjectModal = ({
 
           {/* BUTTONS */}
           <div className="mt-8 flex flex-wrap gap-4">
-
             <a
               href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 clay-pink
 
@@ -175,6 +172,8 @@ const ProjectModal = ({
 
             <a
               href={project.code}
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 clay-sky
 
@@ -208,9 +207,7 @@ const ProjectModal = ({
             >
               Close
             </button>
-
           </div>
-
         </div>
       </div>
     </div>

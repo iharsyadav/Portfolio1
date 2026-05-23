@@ -6,7 +6,7 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#resume", label: "Resume" },
-  { href: "#projects", label: "Projects" },
+  { href: "#project", label: "Project" },
   { href: "#lab", label: "Lab" },
   { href: "#contact", label: "Contact" },
 ];
@@ -27,7 +27,6 @@ export function Navbar() {
 
   return (
     <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-6xl">
-      
       {/* NAVBAR */}
       <nav
         className={`
@@ -40,30 +39,20 @@ export function Navbar() {
           transition-all duration-300
 
           ${
-            scrolled
-              ? "shadow-2xl backdrop-blur-2xl scale-[0.98]"
-              : "shadow-lg"
+            scrolled ? "shadow-2xl backdrop-blur-2xl scale-[0.98]" : "shadow-lg"
           }
         `}
       >
-
         {/* LOGO */}
-        <a
-          href="#home"
-          className="flex items-center gap-3"
-        >
+        <a href="#home" className="flex items-center gap-3">
           <div className="h-11 w-11 rounded-2xl bg-pink-300 flex items-center justify-center font-bold text-lg shadow-md">
             H
           </div>
 
           <div className="hidden sm:block">
-            <h1 className="font-black text-lg leading-none">
-              Harsh.dev
-            </h1>
+            <h1 className="font-black text-lg leading-none">Harsh.dev</h1>
 
-            <p className="text-xs text-zinc-500">
-              Frontend Developer
-            </p>
+            <p className="text-xs text-zinc-500">Frontend Developer</p>
           </div>
         </a>
 
@@ -79,7 +68,7 @@ export function Navbar() {
                   text-sm font-medium
                   text-zinc-600
                   hover:text-zinc-950
-                  hover:bg-white/60
+                  hover:bg-clay-mint/20
                   transition-all duration-300
                 "
               >
@@ -97,7 +86,7 @@ export function Navbar() {
             items-center justify-center
             px-5 py-2.5
             rounded-2xl
-            bg-mint
+            bg-primary
             font-semibold
             shadow-lg
             hover:scale-105
@@ -152,7 +141,7 @@ export function Navbar() {
                     px-4 py-3
                     rounded-2xl
                     text-sm font-medium
-                    hover:bg-white/60
+                    hover:bg-primary/20
                     transition
                   "
                 >
@@ -164,13 +153,7 @@ export function Navbar() {
 
           <a
             href="#contact"
-            className="
-              mt-4
-              flex items-center justify-center
-              rounded-2xl
-              bg-pink-300
-              py-3
-              font-semibold
+            className="mt-4 flex items-center justify-center rounded-2xl bg-pink-400 py-3 font-semibold
             "
           >
             Let's Talk
