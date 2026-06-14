@@ -94,7 +94,7 @@ const ResumeCTA = () => {
         {/* download resume */}
         <a
           href="/resume.pdf"
-          download
+          download="Harsh_Yadav_Resume.pdf"
           className="
             clay
             clay-pink

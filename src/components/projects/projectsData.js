@@ -12,11 +12,7 @@ const projectsData = [
 
     difficulty: "Advanced",
 
-    stack: [
-      "React",
-      "Framer Motion",
-      "Tailwind",
-    ],
+    stack: ["React", "Framer Motion", "Tailwind"],
 
     blurb:
       "Modern frontend component library featuring animated UI blocks, reusable layouts, responsive sections and premium motion interactions.",
@@ -26,6 +22,35 @@ const projectsData = [
     code: "https://github.com/iharsyadav",
 
     category: "Web App",
+  },
+  {
+    title: "iMusic",
+
+    tag: "Modern Music Streaming Platform",
+
+    tone: "amber-dark",
+
+    featured: true,
+
+    difficulty: "Advanced",
+
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Cloudinary",
+    ],
+
+    blurb:
+      "Full-stack music streaming application with song uploads, audio playback controls, genre filtering, search functionality, responsive music library, dark/light themes, Cloudinary media storage, and real-time track management.",
+
+    live: "https://imusicplayer69.netlify.app",
+
+    code: "https://github.com/iharsyadav/musicPlayer",
+
+    category: "Music App",
   },
 
   {
@@ -39,11 +64,7 @@ const projectsData = [
 
     difficulty: "Intermediate",
 
-    stack: [
-      "React",
-      "GSAP",
-      "Lenis",
-    ],
+    stack: ["React", "GSAP", "Lenis"],
 
     blurb:
       "Modern authentication interface with smooth page transitions, animated layouts, floating gradients and responsive onboarding screens.",
@@ -64,11 +85,7 @@ const projectsData = [
 
     difficulty: "Advanced",
 
-    stack: [
-      "React",
-      "Radix",
-      "Tailwind",
-    ],
+    stack: ["React", "Radix", "Tailwind"],
 
     blurb:
       "Collection of productivity utilities and reusable frontend helpers built with clean architecture, accessible UI patterns and modern styling.",
@@ -89,11 +106,7 @@ const projectsData = [
 
     difficulty: "Intermediate",
 
-    stack: [
-      "React",
-      "Framer Motion",
-      "OpenWeather API",
-    ],
+    stack: ["React", "Framer Motion", "OpenWeather API"],
 
     blurb:
       "Interactive weather application with live forecasts, animated conditions, responsive cards and smooth micro-interactions.",
@@ -114,10 +127,7 @@ const projectsData = [
 
     difficulty: "Starter",
 
-    stack: [
-      "CSS",
-      "JavaScript",
-    ],
+    stack: ["CSS", "JavaScript"],
 
     blurb:
       "Creative collection of hover effects, glassmorphism layouts, animated cards and experimental frontend interaction concepts.",
@@ -138,11 +148,7 @@ const projectsData = [
 
     difficulty: "Intermediate",
 
-    stack: [
-      "React",
-      "IndexedDB",
-      "Tailwind",
-    ],
+    stack: ["React", "IndexedDB", "Tailwind"],
 
     blurb:
       "Productivity workspace featuring offline note-taking, task organization, local storage persistence and keyboard-focused workflows.",
@@ -150,6 +156,28 @@ const projectsData = [
     live: "https://productivity-hub-7m0.pages.dev/",
 
     code: "#",
+
+    category: "Web App",
+  },
+  {
+    title: "EmpFlow",
+
+    tag: "Employee Management System",
+
+    tone: "amber-dark",
+
+    featured: true,
+
+    difficulty: "Advanced",
+
+    stack: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+
+    blurb:
+      "Full-stack employee management platform with role-based authentication, HR dashboard, employee profiles, attendance tracking, leave management, and workforce administration tools.",
+
+    live: "https://iemp.vercel.app/",
+
+    code: "https://github.com/iharsyadav",
 
     category: "Web App",
   },

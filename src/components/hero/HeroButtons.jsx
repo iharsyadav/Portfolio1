@@ -3,7 +3,7 @@ const HeroButtons = () => {
     <div className="flex flex-wrap gap-3">
 
       <a
-        href="#projects"
+        href="#project"
         className="clay-sm clay-pink px-6 py-3 font-semibold hover:-translate-y-1 transition"
       >
         View Projects →
