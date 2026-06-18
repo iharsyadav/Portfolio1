@@ -186,12 +186,12 @@ h4 {
 ========================= */
 @layer utilities {
   .clay {
-    background: var(--card);
+    background: var(--surface);
     border-radius: var(--radius-3xl);
     box-shadow: var(--shadow-clay);
   }
   .clay-sm {
-    background: var(--card);
+    background: var(--surface);
     border-radius: var(--radius-2xl);
     box-shadow: var(--shadow-clay-sm);
   }
