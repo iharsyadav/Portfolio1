@@ -3,7 +3,6 @@ import FloatCard from "./FloatCard";
 const FloatingCards = () => {
   return (
     <div className="relative hidden lg:block h-[520px] w-full">
-
       {/* BIG BLUE SHAPE */}
       <div
         className="
@@ -111,7 +110,6 @@ const FloatingCards = () => {
         "
       >
         <div className="flex items-center gap-4">
-
           <div
             className="
               flex
@@ -143,7 +141,6 @@ const FloatingCards = () => {
               Performance budget kept
             </p>
           </div>
-
         </div>
       </FloatCard>
 
@@ -181,7 +178,6 @@ const FloatingCards = () => {
           TypeScript
         </h3>
       </FloatCard>
-
     </div>
   );
 };
